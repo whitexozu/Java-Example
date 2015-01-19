@@ -1,0 +1,1 @@
+[2014-12-16 16:45:04.508] INFO  - [70050003302] rcvBatch	(REQ) "carrierId=SKTKR&requestId=B-20141216164043-SKTKR-1001478&contentId=70050003302&isSuccess=true"	(RES) "{"ok":true,"errorState":null}"	(ELAPSED_TIME) 2042 ms (MlbTasklet.java:199)

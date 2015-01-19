@@ -8,5 +8,11 @@
 	<classpathentry kind="lib" path="lib/slf4j-api-1.6.5.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-jdk14-1.6.5.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/com.springsource.org.junit-4.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.11-beta3.jar" sourcepath="C:/Users/jhkim/.m2/repository/org/apache/poi/poi/3.11-beta3/poi-3.11-beta3-sources.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.8.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.8.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
