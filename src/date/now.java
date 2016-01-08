@@ -18,14 +18,22 @@ public class now {
 	// "yyyy-MM-dd'T'HH:mm:ss.SSSZ" 2001-07-04T12:08:56.235-0700
 
 	public static void main(String[] args) {
+		
+		
+		int year = Calendar.getInstance().get(Calendar.YEAR);
+//		System.out.println(year);
+		for(int i = year; i > year - 5; i--) {
+			System.out.println(i);
+		}
+		
+		
 		// TODO Auto-generated method stub
-		System.out.println(getTodayString());
-		System.out.println(getNowString());
-		System.out.println(getDateString("yyMMdd"));
-		System.out.println(getDateString("hhmm"));
-
-		System.out.println(getDay(0, "yyyyMMdd"));
-		System.out.println(getDay(-1, "yyyy-MM-dd"));
+//		System.out.println(getTodayString());
+//		System.out.println(getNowString());
+//		System.out.println(getDateString("yyMMdd"));
+//		System.out.println(getDateString("hhmm"));
+//		System.out.println(getDay(0, "yyyyMMdd"));
+//		System.out.println(getDay(-1, "yyyy-MM-dd"));
 	}
 
 	public static String getTodayString() {

@@ -16,6 +16,10 @@ public class format {
 		
 		test = getRPad("AAA", 8, " "); 
 		System.out.println("'"+test+"'");
+		
+		String str1 = "검색결뮻abdaef과 약 5,280개 (0.02)초";
+        String clean1 = str1.replaceAll("[^0-9]", "");
+        System.out.println(clean1);
 	}
 	
 	public static String getRPad(String str, int size, String strFillText) {
@@ -23,6 +27,8 @@ public class format {
             str += strFillText;
         }
         return str;
+        
+        
     }
 
 }

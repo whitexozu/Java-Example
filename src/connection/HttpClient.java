@@ -98,26 +98,33 @@ public class HttpClient {
 //        params.add(new BasicNameValuePair("isSuccess", "true"));
 //		HttpClient hc = new HttpClient("http://211.234.232.11:8010/rcv/backoffice/callbackSetContentUploadingResult", params);
 		
-		List<NameValuePair> params = new ArrayList<NameValuePair>();
-        params.add(new BasicNameValuePair("PARTNER_ID", "O00128"));
-        params.add(new BasicNameValuePair("SERVICE_CODE", "001"));
-        params.add(new BasicNameValuePair("MUSIC_CODE", "00293876"));
-        params.add(new BasicNameValuePair("CONTENT_PRICE", "800"));
-        params.add(new BasicNameValuePair("CONTENT_NAME", "핑계"));
-        params.add(new BasicNameValuePair("CONTENT_NUM", "1"));
-        params.add(new BasicNameValuePair("PID", "3102306023"));
-        params.add(new BasicNameValuePair("SUB_CODE", "1270000017"));
-        params.add(new BasicNameValuePair("CARRIER_CODE", "00"));
+//		List<NameValuePair> params = new ArrayList<NameValuePair>();
+//        params.add(new BasicNameValuePair("PARTNER_ID", "O00128"));
+//        params.add(new BasicNameValuePair("SERVICE_CODE", "001"));
+//        params.add(new BasicNameValuePair("MUSIC_CODE", "00293876"));
+//        params.add(new BasicNameValuePair("CONTENT_PRICE", "800"));
+//        params.add(new BasicNameValuePair("CONTENT_NAME", "핑계"));
+//        params.add(new BasicNameValuePair("CONTENT_NUM", "1"));
+//        params.add(new BasicNameValuePair("PID", "3102306023"));
+//        params.add(new BasicNameValuePair("SUB_CODE", "1270000017"));
+//        params.add(new BasicNameValuePair("CARRIER_CODE", "00"));
         
+        List<NameValuePair> params = new ArrayList<NameValuePair>();
+        params.add(new BasicNameValuePair("start", "0"));
+        params.add(new BasicNameValuePair("as_sdt", "0,5"));
+        params.add(new BasicNameValuePair("hl", "ko"));
+        params.add(new BasicNameValuePair("q", "불면증"));
         
         for(NameValuePair v : params) {
         	System.out.println(v.getName() + " : " + v.getValue());
         }
         
-        HttpClient hc = new HttpClient("http://211.234.232.168/popup/search_mcode_dcmf2.jsp", params);
-		
+//        HttpClient hc = new HttpClient("http://211.234.232.168/popup/search_mcode_dcmf2.jsp", params);
+        HttpClient hc = new HttpClient("https://scholar.google.co.kr/scholar", params);
+        
+        
 		try {
-//			hc.send();
+			hc.send();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
