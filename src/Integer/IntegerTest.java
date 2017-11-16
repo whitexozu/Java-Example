@@ -41,6 +41,12 @@ public class IntegerTest {
 		int k = i;
 		System.out.println(k);
 		
+		
+		String tempstr = String.valueOf(109920/621652*100);
+		System.out.println(tempstr);
+		
+		int tempint = 109920 * 100 /621652;
+		System.out.println(tempint);
 	}
 
 }

@@ -27,6 +27,13 @@ public class DecimalToString {
 		BigDecimal bd = new BigDecimal("10.0001");
 		System.out.println(bd.getClass());
 		System.out.println(bd.toString());
+		
+		// case 3
+//		String s = "2.6625081511776";
+		String s = "0.6625081511776";
+		double d = Double.parseDouble(s);
+		int i = (int) d;
+		System.out.println(i);
 	}
 
 }

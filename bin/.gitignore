@@ -1,10 +1,5 @@
-/Integer/
-/applet/
-/awt/
-/cast/
-/connection/
+/object/
+/string/
+/method/
 /date/
-/db/
-/encoding/
-/encryption/
-/excel/
+/array/
