@@ -120,8 +120,8 @@ public class HttpClient {
         }
         
 //        HttpClient hc = new HttpClient("http://211.234.232.168/popup/search_mcode_dcmf2.jsp", params);
-        HttpClient hc = new HttpClient("https://scholar.google.co.kr/scholar", params);
-        
+//        HttpClient hc = new HttpClient("https://scholar.google.co.kr/scholar", params);
+        HttpClient hc = new HttpClient("http://localhost:8080/TA_SKM/ta/openApi/insertMntrLog.do", params);
         
 		try {
 			hc.send();

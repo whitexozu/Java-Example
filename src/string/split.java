@@ -78,9 +78,12 @@ public class split {
 		
 		
 		
-		String temp = "가가가,나나나나,다다다다,라라라";
-		for(String s : (String []) temp.split(",")) {
-			System.out.println(s);
-		}
+//		String temp = "가가가,나나나나,다다다다,라라라";
+		String temp = "11,1212";
+		System.out.println( temp.length() > 0 ? ((String []) temp.split(",")).length : 0 );
+		
+//		for(String s : (String []) temp.split(",")) {
+//			System.out.println(s);
+//		}
 	}
 }
