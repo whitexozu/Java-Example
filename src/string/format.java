@@ -8,7 +8,10 @@ public class format {
 		String temp = "A";
 		String num = "4";
 		
-		String test = String.format("%03d", serial); 
+		String test = String.format("가나다라 %s %s %s 마바사", temp, "B", 1); 
+		System.out.println(test);
+		
+		test = String.format("%03d", serial); 
 		System.out.println(test);
 		
 		test = String.format("% "+num+"d", serial); 

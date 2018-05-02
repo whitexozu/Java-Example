@@ -1,6 +1,9 @@
 package date;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -18,7 +21,7 @@ public class now {
 	// "yyyy-MM-dd'T'HH:mm:ss.SSSZ" 2001-07-04T12:08:56.235-0700
 
 	public static void main(String[] args) {
-
+		System.out.println(System.currentTimeMillis());
 		// int year = Calendar.getInstance().get(Calendar.YEAR);
 		// System.out.println(year);
 		// for(int i = year; i > year - 5; i--) {
@@ -33,9 +36,40 @@ public class now {
 		// System.out.println(getDay(0, "yyyyMMdd"));
 		// System.out.println(getDay(-1, "yyyy-MM-dd"));
 
-		System.out.println(getWeek());
-		System.out.println(getSunday("2017", "06", "5"));
-		System.out.println(getSunday("2017", "07", "1"));
+//		System.out.println(getWeek());
+//		System.out.println(getSunday("2017", "06", "5"));
+//		System.out.println(getSunday("2017", "07", "1"));
+		
+		
+		
+		
+//		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+//		Date currDate = null;
+//		try {
+//			currDate = sdf.parse("20180315");
+//		} catch (ParseException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		String nowTimeStamp = sdf.format(currDate); // 현재 시간 전체
+//		System.out.println(nowTimeStamp);
+		
+		
+		String tDate = "20180915";
+		System.out.println(tDate);
+		int tempYear = Integer.parseInt(tDate.substring(0, 4));
+		int tempMonth = Integer.parseInt(tDate.substring(4, 6));
+		int tempDay = Integer.parseInt(tDate.substring(6, 8));
+		LocalDate localDate = LocalDate.of(tempYear, tempMonth, tempDay).minusDays(1);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
+		String temp = localDate.format(formatter);
+		System.out.println(temp);
+
+		LocalDate currentDate = LocalDate.now().minusDays(1);
+		temp = currentDate.format(formatter);
+		System.out.println(temp);
+		
+
 	}
 
 	public static String getWeek() {

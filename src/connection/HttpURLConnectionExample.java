@@ -30,7 +30,9 @@ public class HttpURLConnectionExample {
 		
 		String urlParameters = "?jobId="+jobId+"&key="+key+"&type="+type+"&state="+state+"&serviceKey="+serviceKey;
 		
-		String url = "http://localhost:8080/TA_SKM/ta/openApi/insertMntrLog.do"+urlParameters;
+//		String url = "http://localhost:8080/TA_SKM/ta/openApi/insertMntrLog.do"+urlParameters;
+		String url = "http://172.17.68.67:2000?WorkCode=0001&StartTm=20180101&ExtnNum=05328&Callid=01b702b2ecda3a3b159024989&dstPath=ta_voice";
+		url= "http://172.17.68.67:2000?WorkCode=0001&StartTm=20180314&ExtnNum=00821&Callid=01b202b844fc1bfd158407409&dstPath=ta_voice";
 
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -42,9 +44,9 @@ public class HttpURLConnectionExample {
 		con.setRequestProperty("User-Agent", USER_AGENT);
 
 		int responseCode = con.getResponseCode();
-		System.out.println("\nSending 'GET' request to URL : " + url);
+//		System.out.println("\nSending 'GET' request to URL : " + url);
 		System.out.println("Response Code : " + responseCode);
-
+//
 		BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 		String inputLine;
 		StringBuffer response = new StringBuffer();
@@ -56,5 +58,6 @@ public class HttpURLConnectionExample {
 
 		// print result
 		System.out.println(response.toString());
+		con.disconnect();
 	}
 }

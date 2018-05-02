@@ -1,0 +1,20 @@
+hola
+/Users/whitexozu/dev/hadoop_workspace/javaExample/src/execute/test.sh: line 3: spark-submit: command not found
+/Users/whitexozu/dev/hadoop_workspace/javaExample/src/execute/test.sh: line 3: spark-submit: command not found
+/Users/whitexozu/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/spark-class: line 24: ~/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/load-spark-env.sh: No such file or directory
+Failed to find Spark jars directory (~/dev/Apps/spark-2.1.0-bin-hadoop2.7/assembly/target/scala-/jars).
+You need to build Spark with the target "package" before running this program.
+/Users/whitexozu/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/spark-class: line 24: ~/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/load-spark-env.sh: No such file or directory
+Failed to find Spark jars directory (~/dev/Apps/spark-2.1.0-bin-hadoop2.7/assembly/target/scala-/jars).
+You need to build Spark with the target "package" before running this program.
+/Users/whitexozu/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/spark-class: line 24: ~/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/load-spark-env.sh: No such file or directory
+Failed to find Spark jars directory (~/dev/Apps/spark-2.1.0-bin-hadoop2.7/assembly/target/scala-/jars).
+You need to build Spark with the target "package" before running this program.
+/Users/whitexozu/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/spark-class: line 24: ~/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/load-spark-env.sh: No such file or directory
+Failed to find Spark jars directory (~/dev/Apps/spark-2.1.0-bin-hadoop2.7/assembly/target/scala-/jars).
+You need to build Spark with the target "package" before running this program.
+/Users/whitexozu/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/spark-class: line 24: ~/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/load-spark-env.sh: No such file or directory
+Failed to find Spark jars directory (~/dev/Apps/spark-2.1.0-bin-hadoop2.7/assembly/target/scala-/jars).
+You need to build Spark with the target "package" before running this program.
+/Users/whitexozu/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/spark-submit: line 27: /Users/whitexozu/dev/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/spark-class: No such file or directory
+/Users/whitexozu/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/spark-submit: line 27: exec: /Users/whitexozu/dev/dev/Apps/spark-2.1.0-bin-hadoop2.7/bin/spark-class: cannot execute: No such file or directory
