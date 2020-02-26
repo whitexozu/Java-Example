@@ -1,4 +1,5 @@
 _Store
+.DS_Store
 ._.DS_Store
 **/.DS_Store
 **/._.DS_Store
@@ -6,3 +7,6 @@ _Store
 **/app
 **/data
 **/*.class
+.vscode
+/bin/
+bin/**
