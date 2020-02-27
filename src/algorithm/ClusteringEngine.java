@@ -25,6 +25,7 @@ public class ClusteringEngine implements Runnable {
 				stop();
 		}
 	}
+	
 
 	public void start() {
 		timer = new Thread(this);
